@@ -29,7 +29,7 @@ func (m *QueryWithInfluxFormatRequest) UnmarshalURLValues(prefix string, values 
 	for key, vals := range values {
 		if len(vals) > 0 {
 			switch prefix + key {
-			case "start":
+			case "start": 
 				m.Start = vals[0]
 			case "end":
 				m.End = vals[0]
